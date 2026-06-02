@@ -1,20 +1,22 @@
-# Intrusion Detection System Using Machine Learning and Deep Learning
+# Intrusion Detection Using Machine Learning and Deep Learning
 
 ## Overview
 
-This project presents an Intrusion Detection System (IDS) that leverages Machine Learning and Deep Learning techniques to identify malicious network activities and cyberattacks.
+Cybersecurity threats continue to grow in complexity, making intelligent intrusion detection systems essential for protecting modern networks. This project presents a Machine Learning and Deep Learning-based Intrusion Detection System (IDS) designed to identify malicious network activities and classify network traffic as either normal or attack traffic.
 
-The system is designed to classify network traffic as either normal or attack traffic, providing an intelligent approach to network security and cyber threat detection.
+The project utilizes advanced data preprocessing, feature engineering, Principal Component Analysis (PCA), multiple Machine Learning algorithms, and Deep Neural Networks to enhance cybersecurity threat detection and network monitoring.
 
 ---
 
-## Objectives
+## Key Features
 
-* Detect malicious network activities
-* Classify normal and attack traffic
-* Compare multiple Machine Learning algorithms
-* Apply Deep Learning for intrusion detection
-* Improve cybersecurity monitoring through intelligent analytics
+* Network Intrusion Detection System (IDS)
+* Binary Classification of Network Traffic
+* Principal Component Analysis (PCA)
+* Machine Learning Model Comparison
+* Deep Learning-Based Threat Detection
+* Data Visualization and Performance Analysis
+* Cybersecurity Analytics
 
 ---
 
@@ -22,14 +24,15 @@ The system is designed to classify network traffic as either normal or attack tr
 
 ### NSL-KDD Dataset
 
-The project utilizes the NSL-KDD dataset, a widely used benchmark dataset for intrusion detection research.
+This project uses the NSL-KDD dataset, a benchmark dataset widely used in intrusion detection and cybersecurity research.
 
-Dataset Characteristics:
+### Dataset Characteristics
 
 * Network Traffic Records
 * Normal and Attack Classes
 * Multiple Network Features
 * Cybersecurity Benchmark Dataset
+* Suitable for Machine Learning and Deep Learning Applications
 
 ---
 
@@ -39,17 +42,17 @@ Dataset Characteristics:
 
 * Python
 
-### Machine Learning Libraries
+### Machine Learning
 
 * Scikit-Learn
 * XGBoost
 
-### Deep Learning Frameworks
+### Deep Learning
 
 * TensorFlow
 * Keras
 
-### Data Processing & Visualization
+### Data Analysis & Visualization
 
 * NumPy
 * Pandas
@@ -63,11 +66,11 @@ Dataset Characteristics:
 The following preprocessing techniques were applied:
 
 * Data Cleaning
-* Feature Scaling
-* Label Encoding
-* One-Hot Encoding
-* Missing Value Handling
 * Feature Engineering
+* Label Encoding
+* RobustScaler Normalization
+* Train-Test Split
+* Data Transformation
 
 ---
 
@@ -75,19 +78,20 @@ The following preprocessing techniques were applied:
 
 ### Principal Component Analysis (PCA)
 
-PCA was applied to reduce dimensionality and improve model efficiency while preserving important information.
+PCA was applied to reduce dimensionality and improve computational efficiency while retaining the most important information from the dataset.
 
-Benefits:
+Benefits include:
 
-* Reduced computational cost
-* Improved model performance
-* Reduced feature redundancy
+* Reduced Feature Space
+* Faster Training Time
+* Improved Model Generalization
+* Reduced Noise and Redundancy
 
 ---
 
 ## Machine Learning Models
 
-The following algorithms were implemented and evaluated:
+The project evaluates multiple Machine Learning algorithms:
 
 ### Logistic Regression
 
@@ -95,11 +99,11 @@ Linear classification model for intrusion detection.
 
 ### K-Nearest Neighbors (KNN)
 
-Distance-based classification model.
+Distance-based classification algorithm.
 
 ### Gaussian Naive Bayes
 
-Probabilistic classification algorithm.
+Probabilistic classifier based on Bayes' theorem.
 
 ### Linear Support Vector Classifier (Linear SVC)
 
@@ -107,7 +111,7 @@ Margin-based classification model.
 
 ### Decision Tree
 
-Rule-based network intrusion classification.
+Tree-based attack classification model.
 
 ### Random Forest
 
@@ -115,7 +119,7 @@ Ensemble learning model using multiple decision trees.
 
 ### XGBoost
 
-Gradient boosting framework for advanced prediction and analysis.
+Advanced gradient boosting framework for high-performance predictive modeling.
 
 ---
 
@@ -123,18 +127,14 @@ Gradient boosting framework for advanced prediction and analysis.
 
 ### Artificial Neural Network (ANN)
 
-The deep learning architecture consists of:
+The Deep Learning architecture includes:
 
 * Dense Layers
+* ReLU Activation Functions
 * Dropout Layers
-* ReLU Activation
-* Binary Classification Output
+* Binary Output Layer
 
-Features:
-
-* Regularization
-* Overfitting Prevention
-* High-Dimensional Feature Learning
+The model is designed to learn complex patterns in network traffic and improve attack detection performance.
 
 ---
 
@@ -147,34 +147,21 @@ Features:
 5. Train-Test Split
 6. Machine Learning Model Training
 7. Deep Learning Model Training
-8. Model Evaluation
-9. Performance Comparison
+8. Performance Evaluation
+9. Model Comparison
 
 ---
 
 ## Evaluation Metrics
 
-Models were evaluated using:
+The models were evaluated using:
 
 * Accuracy
 * Precision
 * Recall
 * F1 Score
-* Mean Squared Error
+* Mean Squared Error (MSE)
 * Confusion Matrix
-
----
-
-## Results
-
-The project compares the performance of multiple Machine Learning and Deep Learning models for intrusion detection.
-
-Key outcomes include:
-
-* Effective attack classification
-* Improved detection accuracy
-* Reduced false-positive rates
-* Enhanced cybersecurity monitoring
 
 ---
 
@@ -185,9 +172,11 @@ The project includes:
 * Class Distribution Analysis
 * Feature Importance Analysis
 * PCA Visualization
-* Training & Validation Loss Curves
-* Training & Validation Accuracy Curves
-* Model Performance Comparison Charts
+* Decision Tree Visualization
+* Training Accuracy Curves
+* Validation Accuracy Curves
+* Training Loss Curves
+* Model Performance Comparison
 
 ---
 
@@ -195,21 +184,41 @@ The project includes:
 
 * Network Security Monitoring
 * Cyber Threat Detection
-* Enterprise Security Systems
 * Security Operations Centers (SOC)
+* Enterprise Cybersecurity Systems
 * Anomaly Detection Systems
-* Intelligent Cyber Defense
+* Intelligent Network Defense
 
 ---
 
-## Future Improvements
+## Future Enhancements
 
 * Real-Time Intrusion Detection
-* Explainable AI (XAI) Integration
-* Advanced Deep Learning Architectures
+* Explainable AI (XAI) for Cybersecurity
 * Cloud-Based Deployment
-* Federated Learning for Cybersecurity
 * Zero-Day Attack Detection
+* Advanced Deep Learning Architectures
+* Federated Learning for Cybersecurity
+
+---
+
+## Repository Structure
+
+```text
+intrusion-detection-using-ml-and-dl/
+
+├── Intrusion_Detection_System.ipynb
+├── README.md
+├── requirements.txt
+│
+├── images/
+│   ├── pca_visualization.png
+│   ├── confusion_matrix.png
+│   ├── model_comparison.png
+│   └── training_curves.png
+│
+└── dataset/
+```
 
 ---
 
@@ -217,19 +226,19 @@ The project includes:
 
 ### Ankur Ray Chayan
 
-Machine Learning  | Embedded Systems Researcher
+Machine Learning Researcher | Embedded Systems Researcher
 
-GitHub:
-https://github.com/AnkurRay25
-
-Research Interests:
+### Research Interests
 
 * Artificial Intelligence
 * Deep Learning
-* Cybersecurity Analytics
 * Explainable AI
+* Cybersecurity Analytics
 * Computer Vision
 * Network Security
+
+GitHub:
+https://github.com/AnkurRay25
 
 ---
 
@@ -238,3 +247,5 @@ Research Interests:
 This project is licensed under the MIT License.
 
 ---
+
+
